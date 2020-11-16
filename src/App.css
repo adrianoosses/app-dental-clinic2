@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.dentalApp{
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  color: rgb(63, 63, 63);
+  text-align: center;
+}
+
+h1,h2{
+  color: rgb(0, 174, 255);
+}

@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// Importacion de componentes
+import Header from './components/header/header'
+import Footer from './components/footer/footer'
+import Buttons from './components/buttons/buttons'
+
+//
+import Login from './containers/login/login'
+import Home from './containers/home/home'
+import Profile from './containers/profile/profile'
+import Register from './containers/register/register'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='dentalApp'>
+      <Router>
+        <Header />
+        <Buttons />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/login' exact component={Login} />
+          <Route path='/profile' exact component={Profile} />
+          <Route path='/register' exact component={Register} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }
