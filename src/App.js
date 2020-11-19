@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 // Importacion de componentes
 import Header from './components/header/header'
@@ -11,21 +11,26 @@ import Login from './containers/login/login'
 import Home from './containers/home/home'
 import Profile from './containers/profile/profile'
 import Register from './containers/register/register'
+//import GetAppointments from './containers/getusers/getusers'
+import GetAppointments from './containers/getappointments/getappointments'
 
 function App() {
   return (
     <div className='dentalApp'>
-      <Router>
-        <Header />
-        <Buttons />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/login' exact component={Login} />
-          <Route path='/profile' exact component={Profile} />
-          <Route path='/register' exact component={Register} />
-        </Switch>
-        <Footer />
-      </Router>
+      <div className='container'>
+        <BrowserRouter>
+          <Header/>
+          <Buttons/>
+          <Switch className='switchContainer'>
+            <Route path='/' exact component={Home} />
+            <Route path='/login' exact component={Login} />
+            <Route path='/profile' exact component={Profile} />
+            <Route path='/register' exact component={Register} />
+            <Route path='/getappointments' exact component={GetAppointments} />
+          </Switch>
+          <Footer className='footerContainer'/>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

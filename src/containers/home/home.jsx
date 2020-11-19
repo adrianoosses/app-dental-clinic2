@@ -9,7 +9,7 @@ class Home extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="contentStyle">
                 <h2>Patient site</h2>
                 From this site, you can access to all your pending appointments. 
 
