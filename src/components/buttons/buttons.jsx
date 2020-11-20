@@ -10,6 +10,7 @@ export default class Buttons extends React.Component {
             <NavLink to="/login">Login</NavLink>
             <NavLink to="/register">Register</NavLink>
             <NavLink to="/getappointments">Get Appointents</NavLink>
+            <NavLink to="/getmyappointments">Get My Appointents</NavLink>
         </div>
         )
     }

@@ -12,6 +12,7 @@ import Home from './containers/home/home'
 import Profile from './containers/profile/profile'
 import Register from './containers/register/register'
 //import GetAppointments from './containers/getusers/getusers'
+import GetUserAppointment from './containers/getuserappointment/getuserappointment'
 import GetAppointments from './containers/getappointments/getappointments'
 
 function App() {
@@ -26,7 +27,9 @@ function App() {
             <Route path='/login' exact component={Login} />
             <Route path='/profile' exact component={Profile} />
             <Route path='/register' exact component={Register} />
-            <Route path='/getappointments' exact component={GetAppointments} />
+            <Route path='/getappointments' exact component={GetAppointments}/>
+            <Route path='/getmyappointments' exact component={GetUserAppointment} />
+
           </Switch>
           <Footer className='footerContainer'/>
         </BrowserRouter>

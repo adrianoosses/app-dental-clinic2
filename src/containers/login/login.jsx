@@ -27,6 +27,7 @@ const Login = () => {
             //console.log("Token: " + msgReceived.data.tokenSend);
             //console.log("stringify(msgReceived): " + JSON.stringify(msgReceived));
             localStorage.setItem('tokenUsr', msgReceived.data.tokenSend);
+            localStorage.setItem('email', user.email);
             notification.success({ message: 'Logged!', description: 'User logged' })
             history.push('/login')
         } catch (error) {
