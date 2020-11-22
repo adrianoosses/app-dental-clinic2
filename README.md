@@ -11,7 +11,7 @@ Front of app aimed at management of dental appointments by admins or clients.
 ## SET UP
 
 ### Project set up
-- Option 1: Heroku: https://app-dental-clinic.herokuapp.com/ <br>
+- Option 1: Heroku: https://app-dental-clinic-front.herokuapp.com/ <br>
 - Option 2: GitHub Pages: https://adrianoosses.github.io/app-dental-clinic2/ <br>
 - Option 3: Download the project from this GitHub.
 
