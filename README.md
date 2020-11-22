@@ -32,8 +32,9 @@ App allows an user makes actions. This user can be admin doctor or patient. In s
 | TEXT| DESCRIPTION|EXAMPLE| ADMIN |
 | ----- | ---- | ---- | ---- | 
 | Login | Log in an user writing email and password | email: filemon@tia.com, password: 12345678 | |
+| Register | Sign up new user | history id = 1 | |
 | Get appointments | Show all appointments of all users |  | x |
-| Show my appointments | Show all appointments of one user |  | |
+| Get my appointments | Show all appointments of one user |  | |
 | Home| Return to main page |  | |
 | Logout | log out from application | | |
 
