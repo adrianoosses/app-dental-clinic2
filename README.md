@@ -12,7 +12,7 @@ Front of app aimed at management of dental appointments by admins or clients.
 
 ### Project set up
 - Option 1: Heroku: https://app-dental-clinic.herokuapp.com/ <br>
-- Option 2: GitHub Pages: https://adrianoosses.github.io/appDentalClinic/ <br>
+- Option 2: GitHub Pages: https://adrianoosses.github.io/app-dental-clinic2/ <br>
 - Option 3: Download the project from this GitHub.
 
 <a name="be"></a>
@@ -30,10 +30,10 @@ npm run start
 App allows an user makes actions. This user can be admin doctor or patient. In some cases, user have to log in before (auth) or being admin. These actions are endpoint, and they are summarized below: 
 ### Buttons
 | TEXT| DESCRIPTION|EXAMPLE| ADMIN |
-| ----- | ---- | ---- | ---- | ---- |
-| Login | Log in an user writing email and password | email: filemon@tia.com, password: 12345678 ||
+| ----- | ---- | ---- | ---- | 
+| Login | Log in an user writing email and password | email: filemon@tia.com, password: 12345678 | |
 | Get appointments | Show all appointments of all users |  | x |
-| Show my appointments | Show all appointments of one user |  |
+| Show my appointments | Show all appointments of one user |  | |
 | Home| Return to main page |  | |
 | Logout | log out from application | | |
 
