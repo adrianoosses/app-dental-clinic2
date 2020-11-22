@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react';
 import './getappointments.css'
-import { useHistory, useParams } from 'react-router-dom';
 
 export default class GetAppointments extends React.Component{
     constructor(props){
@@ -11,13 +10,10 @@ export default class GetAppointments extends React.Component{
         };
     }
     componentDidMount() {
-        //const history = useHistory();
         console.log("Showing appos");
         console.log("Token 2: " + localStorage.getItem('tokenUsr'));
         const token = localStorage.getItem('tokenUsr');
-        //let [arrayAppos, setArrayAppos] = useState([]);
         const url = "https://app-dental-clinic.herokuapp.com/appointment/getAll"; // site that doesn’t send Access-Control-*
-        //const appointmentsRes = await axios.get(url, {headers: {authorization: token}});
 
         axios.get(url, {headers: {authorization: token}})
             .then(appo => {
@@ -52,7 +48,6 @@ export default class GetAppointments extends React.Component{
                     );
                 })
                 }
-                
                 </table>
             </section>
         )
