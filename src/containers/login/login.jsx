@@ -10,7 +10,6 @@ const Login = (props) => {
     const handleSubmit = async (event) => {
         console.log("Logging");
         try {
-            
             event.preventDefault();
             let msgReceived = await axios.post('https://app-dental-clinic.herokuapp.com/user/login', {email, password});
             localStorage.setItem('tokenUsr', msgReceived.data.tokenSend);

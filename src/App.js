@@ -13,6 +13,7 @@ import Profile from './containers/profile/profile'
 import Register from './containers/register/register'
 import GetUserAppointment from './containers/getuserappointment/getuserappointment'
 import GetAppointments from './containers/getappointments/getappointments'
+import DeleteAppointment from './containers/deleteappointment/DeleteAppointment'
 
 function App() {
   const [user, setUser] = useState(null);
@@ -30,6 +31,7 @@ function App() {
             <Route path='/register' exact component={Register} />
             <Route path='/getappointments' exact component={GetAppointments}/>
             <Route path='/getmyappointments' exact component={GetUserAppointment} />
+            <Route path='/deleteappointment' exact component={DeleteAppointment} />
             <Route path='/logout' children={<Logout user={user} setUser={setUser}/>} exact />
           </Switch>
           <Footer className='footerContainer'/>

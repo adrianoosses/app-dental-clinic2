@@ -6,22 +6,46 @@ export default class GetAppointments extends React.Component{
     constructor(props){
         super();
         this.state = {
-            arrayAppos: []
+            arrayAppos: [],
+            loading: true
         };
     }
-    componentDidMount() {
+    async componentDidMount  () {
         const emailUsr = localStorage.getItem('email');
         const token = localStorage.getItem('tokenUsr');
         const url = 'https://app-dental-clinic.herokuapp.com/appointment/getMy';
+        
         axios.get(url, { params: { email: emailUsr },
                          headers: {authorization: token} }
                          )
+        
             .then(appo => {
                 this.setState( {
-                    arrayAppos: appo.data
+                    arrayAppos: appo.data,
+                    loading: false
                 } );
             } );
     }
+       /*
+        let citas =  await axios.get(url, { params: { email: emailUsr },
+                headers: {authorization: token} }
+                )
+
+        this.setState( {
+                arrayAppos: citas.data,
+                loading: false
+            } );
+    }
+    */
+    
+    //componentDidUpdate() {
+        //if(this.state.loaf){ 
+        //console.log("Cargando los datos... ");
+        //}
+        /*else{
+            console.log("Array apos: " + JSON.stringify(this.state.arrayAppos));
+        }*/
+    //}
     render(){
         return(
             <section className="contentStyle">

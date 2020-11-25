@@ -8,6 +8,7 @@ const Buttons = (props) => {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/getappointments">Get Appointents</NavLink>
             <NavLink to="/getmyappointments">Get My Appointents</NavLink>
+            <NavLink to="/deleteappointment">Delete Appoinment</NavLink>
             {props.user ?
                 <>
                     <span class="logoutText">User:{localStorage.getItem('email')}</span>
